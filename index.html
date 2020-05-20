@@ -40,6 +40,7 @@ reset2 = document.getElementById('reset2');
 
 function three()
 {
+   document.getElementById("timer1").style.visibility="visible";
   document.getElementById("start1").style.display="none";
   document.getElementById("reset1").style.visibility="visible";
   
@@ -72,6 +73,7 @@ var now =new Date().getTime();
 
 function half()
 {
+  document.getElementById("timer3").style.visibility="visible";
    document.getElementById("start3").style.display="none";
   document.getElementById("reset3").style.visibility="visible";
   
@@ -104,6 +106,7 @@ var now =new Date().getTime();
 
 function one()
 {
+  document.getElementById("timer2").style.visibility="visible";
    document.getElementById("start2").style.display="none";
   document.getElementById("reset2").style.visibility="visible";
   
@@ -137,21 +140,24 @@ var now =new Date().getTime();
 }
 //functions to reset
 function re1() {
-  clearTimeout(x1);
-  //document.getElementById("start1").style.display="inline";
-  //document.getElementById("reset1").style.visibility="hidden";
+  //clearTimeout(x1);
+  document.getElementById("timer1").style.visibility="hidden";
+  document.getElementById("start1").style.display="inline";
+  document.getElementById("reset1").style.visibility="hidden";
 three();
 }
 function re3() {
-  clearTimeout(x3);
-  //document.getElementById("start3").style.display="inline";
-  //document.getElementById("reset3").style.visibility="hidden";
+  //clearTimeout(x3);
+  document.getElementById("timer3").style.visibility="hidden";
+  document.getElementById("start3").style.display="inline";
+  document.getElementById("reset3").style.visibility="hidden";
   half();
 }
 function re2() {
-  clearTimeout(x2);
-  //document.getElementById("start2").style.display="inline";
-  //document.getElementById("reset2").style.visibility="hidden";
+  //clearTimeout(x2);
+  document.getElementById("timer2").style.visibility="hidden";
+  document.getElementById("start2").style.display="inline";
+  document.getElementById("reset2").style.visibility="hidden";
   one();
 }
 
